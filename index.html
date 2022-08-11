@@ -9,7 +9,8 @@
 </head>
 
 <body>
-  <header style="max-width:600px; width: 100%;padding: 25px 30px; display: flex; justify-content: space-between;">
+  <!-- -----------------------header----------------------------- -->
+  <header style="max-width:600px; width: 100%;padding: 25px 30px; display: grid; grid-template-columns: 1fr 1fr;">
     <div>
       <div style="margin-bottom: 15px;">
         <div style="color:#BF8F55; font-weight: 600; font-size: 40px;">Corvinus hírek</div>
@@ -18,37 +19,41 @@
       <div><button style="background-color:#BF8F55; color:white;padding: 10px 15px; border: none;">Tartalomigények
           beküldése</button></div>
     </div>
-    <div><img src="./images/Budapesti_Corvinus_Egyetem_logo.png" alt="" style="width: 200px;"></div>
+    <div style="justify-self: end;"><img src="./images/Budapesti_Corvinus_Egyetem_logo.png" alt=""
+        style="width: 200px;"></div>
   </header>
+  <!--------------------------Kiemelt hírek - Featured news---------------------  -->
   <div style="background-color: #1B213E; max-width:600px; width: 100%;padding: 25px 30px;">
     <div style="margin-bottom: 25px; color:white;font-weight: 600; font-size: 35px;">Kiemelt hírek</div>
-    <div style="height: 110px;display: flex; margin-bottom: 15px;">
-      <div style="max-width: 170px; width:100%;"><img src="" alt=""
-          style="max-width: 170px; height: 110px; width:100%;"></div>
-      <div style="padding: 15px; background-color: white;width: 100%;">
+    <div style="display: grid; grid-template-columns: 170px 1fr; margin-bottom: 15px;">
+      <div style="max-width: 170px; width:100%;"><img src="./images/Budapesti_Corvinus_Egyetem_logo.png" alt=""
+          style="max-width: 170px; height: 100%; width:100%;"></div>
+      <div style="padding: 15px; background-color: white;">
         <div style="font-size: 15px; font-weight:600;color:#BF8F55; margin-bottom: 15px;">Több mint 100 helyet léptünk
           előre a QS
           világrangsorán</div>
         <div style="font-size: 14px; font-weight:500;color:#3D454C;">A brit QS World University Rankings felsőoktatási
           rangsort
-          évente teszi közzé a világ felsőoktatási intézményeinek</div>
+          évente teszi közzé a világ felsőoktatási intézményeinek
+        </div>
       </div>
     </div>
-    <div style="height: 110px; display: flex; margin-bottom: 15px;">
+    <div style="display: grid; grid-template-columns: 170px 1fr; margin-bottom: 15px;">
       <div style="max-width: 170px;  width:100%;"><img src="" alt=""
-          style="max-width: 170px; height: 110px; width:100%;"></div>
-      <div style=" padding: 15px; background-color: white; width: 100%;">
+          style="max-width: 170px; height: 100%; width:100%;"></div>
+      <div style=" padding: 15px; background-color: white;">
         <div style="font-size: 14px; font-weight:600;color:#BF8F55; margin-bottom: 15px;">A félév legfontosabb dátumai
         </div>
         <div style="font-size: 14px; font-weight:500;color:#3D454C;">A HALVEL része az Egyetem minőségbiztosítási és -
           fejlesztési rendszerének, hiszen az oktatás elsődleges
-          célcsoportját hallgatóink alkotják.</div>
+          célcsoportját hallgatóink alkotják.
+        </div>
       </div>
     </div>
-    <div style="height: 110px;display: flex; margin-bottom: 15px;">
-      <div style="max-width: 170px; width:100%;"><img src="" alt=""
-          style="max-width: 170px; height: 110px; width:100%;"></div>
-      <div style="padding: 15px; background-color: white;width: 100%;">
+    <div style="display: grid; grid-template-columns: 170px 1fr; margin-bottom: 15px;">
+      <div style="max-width: 170px; width:100%;"><img src="" alt="" style="max-width: 170px; height: 100%; width:100%;">
+      </div>
+      <div style="padding: 15px; background-color: white;">
         <div style="font-size: 15px; font-weight:600;color:#BF8F55; margin-bottom: 15px;">Erre figyelj, ha most végzel!
         </div>
         <div style="font-size: 14px; font-weight:500;color:#3D454C;">Összefoglaltuk a legfontosabb határidőket a
@@ -57,13 +62,14 @@
       </div>
     </div>
   </div>
+  <!-- -----------------------------------Akkreditáció - Accreditation ------------------------>
   <div style=" max-width:600px; width: 100%;padding: 25px 30px 0px;">
     <div style=" border-bottom: #BF8F55 solid 2px; padding-bottom: 25px;">
       <div style="margin-bottom: 25px; color:#BF8F55;font-weight: 600; font-size: 35px;">Akkreditáció</div>
-      <div style="height: 110px;display: flex; margin-bottom: 15px;">
+      <div style="display: grid; grid-template-columns: 170px 1fr; margin-bottom: 15px;">
         <div style="max-width: 170px; width:100%;"><img src="" alt=""
-            style="max-width: 170px; height: 110px; width:100%;"></div>
-        <div style="padding: 15px 30px 10px 15px; background-color: #E5E5E5;width: 100%;">
+            style="max-width: 170px; height: 100%; width:100%;"></div>
+        <div style="padding: 15px 30px 10px 15px; background-color: #E5E5E5;">
           <div style="font-size: 15px; font-weight:600;color:#1B213E; margin-bottom: 15px;">Így módosíthatod a felvételi
             sorrendedet</div>
           <div style="font-size: 14px; font-weight:500;color:#3D454C;">Már lehetőséged van arra, hogy módosíts a
@@ -72,10 +78,10 @@
             információt és tippet, amit mindenképp érdemes tudnod.</div>
         </div>
       </div>
-      <div style="height: 110px; display: flex; margin-bottom: 15px;">
+      <div style="display: grid; grid-template-columns: 170px 1fr; margin-bottom: 15px;">
         <div style="max-width: 170px;  width:100%;"><img src="" alt=""
-            style="max-width: 170px; height: 110px; width:100%;"></div>
-        <div style=" padding: 15px 30px 10px 15px; background-color: #E5E5E5; width: 100%;">
+            style="max-width: 170px; height: 100%; width:100%;"></div>
+        <div style=" padding: 15px 30px 10px 15px; background-color: #E5E5E5;">
           <div
             style="display: flex; font-size: 14px; font-weight:600;color:#1B213E; margin-bottom: 15px; border-bottom: #BF8F55 solid 2px; padding-bottom: 5px;">
             <div
@@ -93,7 +99,7 @@
       </div>
     </div>
   </div>
-
+  <!----------------------------------Blog - Blod--------------------------------------- -->
   <div style=" max-width:600px; width: 100%;padding: 25px 30px 0px;">
     <div style="border-bottom: #BF8F55 solid 2px; padding-bottom: 25px;">
       <div style="margin-bottom: 25px; color:#BF8F55;font-weight: 600; font-size: 35px;">Blog</div>
@@ -155,13 +161,14 @@
       </div>
     </div>
   </div>
+  <!-- ----------------------------- Díj, kitüntetés- Prize, award----------------------->
   <div style=" max-width:600px; width: 100%;padding: 25px 30px 0px;">
     <div style="border-bottom: #BF8F55 solid 2px; padding-bottom: 25px;">
       <div style="margin-bottom: 25px; color:#BF8F55;font-weight: 600; font-size: 35px;">Díj, kitüntetés</div>
-      <div style="height: 110px;display: flex; margin-bottom: 15px;">
+      <div style="display: grid; grid-template-columns: 170px 1fr; margin-bottom: 15px;">
         <div style="max-width: 170px; width:100%;"><img src="" alt=""
-            style="max-width: 170px; height: 110px; width:100%;"></div>
-        <div style="padding: 15px 30px 10px 15px; background-color: #E5E5E5;width: 100%;">
+            style="max-width: 170px; height: 100%; width:100%;"></div>
+        <div style="padding: 15px 30px 10px 15px; background-color: #E5E5E5;">
           <div style="font-size: 15px; font-weight:600;color:#1B213E; margin-bottom: 15px;">Így módosíthatod a felvételi
             sorrendedet</div>
           <div style="font-size: 14px; font-weight:500;color:#3D454C;">Már lehetőséged van arra, hogy módosíts a
@@ -172,13 +179,14 @@
       </div>
     </div>
   </div>
+  <!-- ----------------------------- Elnöki testület- Directors----------------------->
   <div style=" max-width:600px; width: 100%;padding: 25px 30px 0px;">
     <div style="border-bottom: #BF8F55 solid 2px; padding-bottom: 25px;">
-      <div style="margin-bottom: 25px; color:#BF8F55;font-weight: 600; font-size: 35px;">Díj, kitüntetés</div>
-      <div style="height: 110px;display: flex; margin-bottom: 15px;">
+      <div style="margin-bottom: 25px; color:#BF8F55;font-weight: 600; font-size: 35px;">Elnöki testület</div>
+      <div style="display: grid; grid-template-columns: 170px 1fr; margin-bottom: 15px;">
         <div style="max-width: 170px; width:100%;"><img src="" alt=""
-            style="max-width: 170px; height: 110px; width:100%;"></div>
-        <div style="padding: 15px 30px 10px 15px; background-color: #E5E5E5;width: 100%;">
+            style="max-width: 170px; height: 100%; width:100%;"></div>
+        <div style="padding: 15px 30px 10px 15px; background-color: #E5E5E5;">
           <div style="font-size: 15px; font-weight:600;color:#1B213E; margin-bottom: 15px;">Így módosíthatod a felvételi
             sorrendedet</div>
           <div style="font-size: 14px; font-weight:500;color:#3D454C;">Már lehetőséged van arra, hogy módosíts a
@@ -189,13 +197,14 @@
       </div>
     </div>
   </div>
+  <!-- ----------------------------- Konferencia - Conference---------------->
   <div style=" max-width:600px; width: 100%;padding: 25px 30px 0px;">
     <div style="border-bottom: #BF8F55 solid 2px; padding-bottom: 25px;">
       <div style="margin-bottom: 25px; color:#BF8F55;font-weight: 600; font-size: 35px;">Konferencia</div>
-      <div style="height: 110px; display: flex; margin-bottom: 15px;">
+      <div style="display: grid; grid-template-columns: 170px 1fr; margin-bottom: 15px;">
         <div style="max-width: 170px;  width:100%;"><img src="" alt=""
-            style="max-width: 170px; height: 110px; width:100%;"></div>
-        <div style=" padding: 15px 30px 10px 15px; background-color: #E5E5E5; width: 100%;">
+            style="max-width: 170px; height: 100%; width:100%;"></div>
+        <div style=" padding: 15px 30px 10px 15px; background-color: #E5E5E5;">
           <div
             style="display: flex; font-size: 14px; font-weight:600;color:#1B213E; margin-bottom: 15px; border-bottom: #BF8F55 solid 2px; padding-bottom: 5px;">
             <div
@@ -211,10 +220,10 @@
             (IFIP) 8.5-ös munkacsoportja idén is megrendezi éves</div>
         </div>
       </div>
-      <div style="height: 110px; display: flex; margin-bottom: 15px;">
+      <div style="display: grid; grid-template-columns: 170px 1fr; margin-bottom: 15px;">
         <div style="max-width: 170px;  width:100%;"><img src="" alt=""
-            style="max-width: 170px; height: 110px; width:100%;"></div>
-        <div style=" padding: 15px 30px 10px 15px; background-color: #E5E5E5; width: 100%;">
+            style="max-width: 170px; height: 100%; width:100%;"></div>
+        <div style=" padding: 15px 30px 10px 15px; background-color: #E5E5E5;">
           <div
             style="display: flex; font-size: 14px; font-weight:600;color:#1B213E; margin-bottom: 15px; border-bottom: #BF8F55 solid 2px; padding-bottom: 5px;">
             <div
@@ -232,6 +241,7 @@
       </div>
     </div>
   </div>
+  <!-----------------------------Kutatás-Research---------------------------  -->
   <div style=" max-width:600px; width: 100%;padding: 25px 30px 0px;">
     <div style="border-bottom: #BF8F55 solid 2px; padding-bottom: 25px;">
       <div style="margin-bottom: 25px; color:#BF8F55;font-weight: 600; font-size: 35px;">Kutatás</div>
@@ -329,13 +339,14 @@
       </div>
     </div>
   </div>
+  <!-- ----------------------------------Oktatás-Education-------------------------- -->
   <div style=" max-width:600px; width: 100%;padding: 25px 30px 0px;">
     <div style=" border-bottom: #BF8F55 solid 2px; padding-bottom: 25px;">
-      <div style="margin-bottom: 25px; color:#BF8F55;font-weight: 600; font-size: 35px;">Akkreditáció</div>
-      <div style="height: 110px;display: flex; margin-bottom: 15px;">
+      <div style="margin-bottom: 25px; color:#BF8F55;font-weight: 600; font-size: 35px;">Oktatás</div>
+      <div style="display: grid; grid-template-columns: 170px 1fr; margin-bottom: 15px;">
         <div style="max-width: 170px; width:100%;"><img src="" alt=""
-            style="max-width: 170px; height: 110px; width:100%;"></div>
-        <div style="padding: 15px 30px 10px 15px; background-color: #E5E5E5;width: 100%;">
+            style="max-width: 170px; height: 100%; width:100%;"></div>
+        <div style="padding: 15px 30px 10px 15px; background-color: #E5E5E5;">
           <div style="font-size: 15px; font-weight:600;color:#1B213E; margin-bottom: 15px;">Így módosíthatod a felvételi
             sorrendedet</div>
           <div style="font-size: 14px; font-weight:500;color:#3D454C;">Már lehetőséged van arra, hogy módosíts a
@@ -344,10 +355,10 @@
             információt és tippet, amit mindenképp érdemes tudnod.</div>
         </div>
       </div>
-      <div style="height: 110px; display: flex; margin-bottom: 15px;">
+      <div style="display: grid; grid-template-columns: 170px 1fr; margin-bottom: 15px;">
         <div style="max-width: 170px;  width:100%;"><img src="" alt=""
-            style="max-width: 170px; height: 110px; width:100%;"></div>
-        <div style=" padding: 15px 30px 10px 15px; background-color: #E5E5E5; width: 100%;">
+            style="max-width: 170px; height: 100%; width:100%;"></div>
+        <div style=" padding: 15px 30px 10px 15px; background-color: #E5E5E5;">
           <div
             style="display: flex; font-size: 14px; font-weight:600;color:#1B213E; margin-bottom: 15px; border-bottom: #BF8F55 solid 2px; padding-bottom: 5px;">
             <div
@@ -365,49 +376,8 @@
       </div>
     </div>
   </div>
-  <div style=" max-width:600px; width: 100%;padding: 25px 30px 0px;">
-    <div style="border-bottom: #BF8F55 solid 2px; padding-bottom: 25px;">
-      <div style="margin-bottom: 25px; color:#BF8F55;font-weight: 600; font-size: 35px;">Oktatás</div>
-      <div style="height: 110px; display: flex; margin-bottom: 15px;">
-        <div style="max-width: 170px;  width:100%;"><img src="" alt=""
-            style="max-width: 170px; height: 110px; width:100%;"></div>
-        <div style=" padding: 15px 30px 10px 15px; background-color: #E5E5E5; width: 100%;">
-          <div
-            style="display: flex; font-size: 14px; font-weight:600;color:#1B213E; margin-bottom: 15px; border-bottom: #BF8F55 solid 2px; padding-bottom: 5px;">
-            <div
-              style="border-right: #BF8F55 solid 2px; padding-right: 5px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-              <div>MÁJ</div>
-              <div style="color:#BF8F55;">9</div>
-            </div>
-            <div style="padding-left: 5px;">IFIP e Kormányzás, e-Részvétel, e
-              Demokrácia konferencia</div>
-          </div>
-          <div style="font-size: 14px; font-weight:500;color:#3D454C;">Az International Federation of Information
-            Processing
-            (IFIP) 8.5-ös munkacsoportja idén is megrendezi éves</div>
-        </div>
-      </div>
-      <div style="height: 110px; display: flex; margin-bottom: 15px;">
-        <div style="max-width: 170px;  width:100%;"><img src="" alt=""
-            style="max-width: 170px; height: 110px; width:100%;"></div>
-        <div style=" padding: 15px 30px 10px 15px; background-color: #E5E5E5; width: 100%;">
-          <div
-            style="display: flex; font-size: 14px; font-weight:600;color:#1B213E; margin-bottom: 15px; border-bottom: #BF8F55 solid 2px; padding-bottom: 5px;">
-            <div
-              style="border-right: #BF8F55 solid 2px; padding-right: 5px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-              <div>MÁJ</div>
-              <div style="color:#BF8F55;">9</div>
-            </div>
-            <div style="padding-left: 5px;">IFIP e Kormányzás, e-Részvétel, e
-              Demokrácia konferencia</div>
-          </div>
-          <div style="font-size: 14px; font-weight:500;color:#3D454C;">Az International Federation of Information
-            Processing
-            (IFIP) 8.5-ös munkacsoportja idén is megrendezi éves</div>
-        </div>
-      </div>
-    </div>
-  </div>
+
+  <!--  ------------------------Publikáció-Publication------------------------------>
   <div style=" max-width:600px; width: 100%;padding: 25px 30px 0px;">
     <div style="border-bottom: #BF8F55 solid 2px; padding-bottom: 25px;">
       <div style="margin-bottom: 25px; color:#BF8F55;font-weight: 600; font-size: 35px;">Publikáció</div>
@@ -485,13 +455,14 @@
       </div>
     </div>
   </div>
+  <!-- -----------------------------Szenátus-Senate------------------ -->
   <div style=" max-width:600px; width: 100%;padding: 25px 30px 0px;">
     <div style="border-bottom: #BF8F55 solid 2px; padding-bottom: 25px;">
       <div style="margin-bottom: 25px; color:#BF8F55;font-weight: 600; font-size: 35px;">Szenátus</div>
-      <div style="height: 110px;display: flex; margin-bottom: 15px;">
+      <div style="display: grid; grid-template-columns: 170px 1fr; margin-bottom: 15px;">
         <div style="max-width: 170px; width:100%;"><img src="" alt=""
-            style="max-width: 170px; height: 110px; width:100%;"></div>
-        <div style="padding: 15px 30px 10px 15px; background-color: #E5E5E5;width: 100%;">
+            style="max-width: 170px; height: 100%; width:100%;"></div>
+        <div style="padding: 15px 30px 10px 15px; background-color: #E5E5E5;">
           <div style="font-size: 15px; font-weight:600;color:#1B213E; margin-bottom: 15px;">Így módosíthatod a felvételi
             sorrendedet</div>
           <div style="font-size: 14px; font-weight:500;color:#3D454C;">Már lehetőséged van arra, hogy módosíts a
@@ -500,10 +471,10 @@
             információt és tippet, amit mindenképp érdemes tudnod.</div>
         </div>
       </div>
-      <div style="height: 110px; display: flex; margin-bottom: 15px;">
+      <div style="display: grid; grid-template-columns: 170px 1fr; margin-bottom: 15px;">
         <div style="max-width: 170px;  width:100%;"><img src="" alt=""
-            style="max-width: 170px; height: 110px; width:100%;"></div>
-        <div style=" padding: 15px 30px 10px 15px; background-color: #E5E5E5; width: 100%;">
+            style="max-width: 170px; height: 100%; width:100%;"></div>
+        <div style=" padding: 15px 30px 10px 15px; background-color: #E5E5E5;">
           <div
             style="display: flex; font-size: 14px; font-weight:600;color:#1B213E; margin-bottom: 15px; border-bottom: #BF8F55 solid 2px; padding-bottom: 5px;">
             <div
@@ -521,13 +492,14 @@
       </div>
     </div>
   </div>
+  <!-- ------------------------Szervezeti esemény-Organizational event-------------- -->
   <div style=" max-width:600px; width: 100%;padding: 25px 30px 0px;">
     <div style="border-bottom: #BF8F55 solid 2px; padding-bottom: 25px;">
       <div style="margin-bottom: 25px; color:#BF8F55;font-weight: 600; font-size: 35px;">Szervezeti esemény</div>
-      <div style="height: 110px; display: flex; margin-bottom: 15px;">
+      <div style="display: grid; grid-template-columns: 170px 1fr; margin-bottom: 15px;">
         <div style="max-width: 170px;  width:100%;"><img src="" alt=""
-            style="max-width: 170px; height: 110px; width:100%;"></div>
-        <div style=" padding: 15px 30px 10px 15px; background-color: #E5E5E5; width: 100%;">
+            style="max-width: 170px; height: 100%; width:100%;"></div>
+        <div style=" padding: 15px 30px 10px 15px; background-color: #E5E5E5;">
           <div
             style="display: flex; font-size: 14px; font-weight:600;color:#1B213E; margin-bottom: 15px; border-bottom: #BF8F55 solid 2px; padding-bottom: 5px;">
             <div
@@ -543,10 +515,10 @@
             (IFIP) 8.5-ös munkacsoportja idén is megrendezi éves</div>
         </div>
       </div>
-      <div style="height: 110px; display: flex; margin-bottom: 15px;">
+      <div style="display: grid; grid-template-columns: 170px 1fr; margin-bottom: 15px;">
         <div style="max-width: 170px;  width:100%;"><img src="" alt=""
-            style="max-width: 170px; height: 110px; width:100%;"></div>
-        <div style=" padding: 15px 30px 10px 15px; background-color: #E5E5E5; width: 100%;">
+            style="max-width: 170px; height: 100%; width:100%;"></div>
+        <div style=" padding: 15px 30px 10px 15px; background-color: #E5E5E5;">
           <div
             style="display: flex; font-size: 14px; font-weight:600;color:#1B213E; margin-bottom: 15px; border-bottom: #BF8F55 solid 2px; padding-bottom: 5px;">
             <div
@@ -559,17 +531,20 @@
           </div>
           <div style="font-size: 14px; font-weight:500;color:#3D454C;">Az International Federation of Information
             Processing
-            (IFIP) 8.5-ös munkacsoportja idén is megrendezi éves</div>
+            (IFIP) 8.5-ös munkacsoportja idén is megrendezi éves
+          </div>
         </div>
       </div>
     </div>
   </div>
+
+  <!-- -----------------------------footer--------------------------------------- -->
   <footer style=" max-width:600px; width: 100%;background-color: #1B213E; padding: 25px 30px 30px">
     <div style="margin-bottom: 25px; color:#BF8F55;font-weight: 600; font-size: 35px;">Kövessen minket!</div>
     <div style="margin-bottom: 25px; display: flex; gap:20px;">
       <img style="width:50px;height:50px" src="" alt="">
       <img style="width:50px;height:50px" src="" alt="">
-      <img style="width:50px;height:50px"  src="" alt="">
+      <img style="width:50px;height:50px" src="" alt="">
       <img style="width:50px;height:50px" src="" alt="">
       <img style="width:50px;height:50px" src="" alt="">
       <img style="width:50px;height:50px" src="" alt="">
