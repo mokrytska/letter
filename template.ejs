@@ -1,6 +1,6 @@
 <html>
 <body style="margin: 25px 30px 0px 30px;">
-    <header style="max-width:600px; width: 100%;padding: 25px 30px; display: flex; justify-content: space-between;">
+    <div style="max-width:600px; width: 100%;padding: 25px 30px; display: flex; justify-content:space-between ;">
         <div>
             <div style="margin-bottom: 15px;">
                 <div style="color:#BF8F55; font-weight: 600; font-size: 40px;">Corvinus hírek</div>
@@ -13,8 +13,12 @@
                 </button>
             </div>
         </div>
-        <div><img src="{{LogoSrc}}" alt="" style="width: 200px;"></div>
-    </header>
+        <div>
+            <div>
+                <img src="{{LogoSrc}}" alt=""style="width: 200px;">
+            </div>
+        </div>
+    </div>
 
 
     {{#if HasAllStaffContent}}
