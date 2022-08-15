@@ -1,0 +1,170 @@
+{
+  "LogoSrc": "https://unicorvinus.sharepoint.com/sites/Intranet-Staging/SiteAssets/image_2022_06_07T12_26_44_744Z.png",
+  "AllStaffContent": [
+      {
+          "Cover": "https://4b28b118-cdn.agilitycms.cloud/Attachments/NewItems/iskolakezdes_20220811085351_0.jpg",
+          "Title": null,
+          "Lead": "3 hét múlva elstratol az új tanév. Sok apróságra kell odafigyelni"
+      },
+      {
+          "Cover": "https://4b28b118-cdn.agilitycms.cloud/Attachments/NewItems/44_20220811090124_0.jpg",
+          "Title": "Ez egy teszt határidő aminek a célja a működés ellenőrzése",
+          "Lead": "Lássuk megjelenik-e frontend ez a határidő publikálás után"
+      },
+      {
+          "Cover": "https://4b28b118-cdn.agilitycms.cloud/Attachments/NewItems/iskolakezdes_20220811084804_0.jpg",
+          "Title": "Indul az új tanév hamarosan. Már csak 3 hét maradt a vakációból",
+          "Lead": "3 hét múlva indul az új tanév. Nem árt már most felkészülni, milyen teendők lesznek."
+      },
+      {
+          "Cover": "https://4b28b118-cdn.agilitycms.cloud/Attachments/NewItems/New-Project-2022-07-18T100745.652-scaled_20220811102721_0.jpg",
+          "Title": "új sliders esemény - long title",
+          "Lead": "Lead - teszt"
+      }
+  ],
+  "HasAllStaffContent": true,
+  "Topics": [
+      {
+          "Title": "Advent",
+          "Items": [
+              {
+                  "Cover": "https://4b28b118-cdn.agilitycms.cloud/Attachments/hirek/130188658_3283279825111086_2133357511517282081_o_20201207161759_0.jpg",
+                  "Month": "aug.",
+                  "Day2Digit": "09",
+                  "Lead": "dhfsdfhdahfad",
+                  "Title": "teszt o8o9",
+                  "CvuReferenceName": "stagingmycorvinusnews",
+                  "isNews": true,
+                  "isEvent": false
+              }
+          ],
+          "MoreThanLimit": false
+      },
+      {
+          "Title": "Elnöki testület",
+          "Items": [
+              {
+                  "Cover": "https://4b28b118-cdn.agilitycms.cloud/Attachments/hirek/ambassador (4).jpg",
+                  "Month": "aug.",
+                  "Day2Digit": "10",
+                  "Lead": "Idén is megszervezésre kerül a már hagyományosnak számító alkotótábor.",
+                  "Title": "Ingyenes fenntarthatósági alkotótábor fiatal művészeknek",
+                  "CvuReferenceName": "stagingmycorvinusnews",
+                  "isNews": true,
+                  "isEvent": false
+              }
+          ],
+          "MoreThanLimit": false
+      },
+      {
+          "Title": "Kutatás",
+          "Items": [
+              {
+                  "Cover": "https://4b28b118-cdn.agilitycms.cloud/Attachments/NewItems/4546318e-156b-4e56-a45d-b095e439d323_20220811083627_0.jpg",
+                  "Month": "aug.",
+                  "Day2Digit": "11",
+                  "Lead": "Történelmi aszály sújtja Magyarországot: 1901 óta nem esett annyira kevés csapadék, mint idén. A helyzet az Alföldön a legrosszabb, ott ugyanis a szokásos csapadékmennyiség fele hiányzik. Ezek után nem is csoda, ha az aszályhelyzet az űrből is látszik",
+                  "Title": "Sok minden változott a tavalyi évhez képest, és ezt az Időkép által megosztott kép is igazolja.",
+                  "CvuReferenceName": "stagingmycorvinusnews",
+                  "isNews": true,
+                  "isEvent": false
+              },
+              {
+                  "Cover": "https://4b28b118-cdn.agilitycms.cloud/Attachments/NewItems/748e3f95-de9a-421c-b18b-d8eeb7e92c3c_20220811082443_0.jpg",
+                  "Month": "aug.",
+                  "Day2Digit": "11",
+                  "Lead": "A globális felmelegedés miatt csökken a legnagyobb tengeri emlősök élőhelye, az Új-Zéland körüli vizekben élő kék- és ámbráscetek délre, hűvösebb vizekbe vándorolnak.",
+                  "Title": "Nagy bajba keveri a bálnákat a klímaváltozás ha nem figyelünk oda eléggé",
+                  "CvuReferenceName": "stagingmycorvinusnews",
+                  "isNews": true,
+                  "isEvent": false
+              },
+              {
+                  "Cover": "https://4b28b118-cdn.agilitycms.cloud/Attachments/NewItems/0d80ed6a-e922-47dd-94fb-41d0f75ce06a_20220811083056_0.jpg",
+                  "Month": "aug.",
+                  "Day2Digit": "11",
+                  "Lead": "Végső eszközként egyes közösségek nagyobb tengerszint feletti magasságba való áttelepítésével is számol Új-Zéland első olyan terve, amelyet a klímaváltozáshoz való alkalmazkodásra dolgozott ki a kormány. Tanulságok lehet más országok számára is, például az alkalmazkodás költségeinek megosztása miatt.",
+                  "Title": "Megszületett egy vészforgatókönyv arra, hogyan alkalmazkodhatunk a klímaváltozáshoz - long title",
+                  "CvuReferenceName": "stagingmycorvinusnews",
+                  "isNews": true,
+                  "isEvent": false
+              }
+          ],
+          "MoreThanLimit": false
+      },
+      {
+          "Title": "Szervezeti tájékoztatás",
+          "Items": [
+              {
+                  "Cover": "https://4b28b118-cdn.agilitycms.cloud/Attachments/NewItems/images_20220811084152_0.jpg",
+                  "Month": "aug.",
+                  "Day2Digit": "11",
+                  "Lead": "Szombaton helyreáll az elmúlt két napban szünetelő szolgáltatás",
+                  "Title": "2022 augusztus 13. helyreáll az egyetemi Internet",
+                  "CvuReferenceName": "stagingevents",
+                  "isNews": false,
+                  "isEvent": true
+              },
+              {
+                  "Cover": "https://4b28b118-cdn.agilitycms.cloud/Attachments/NewItems/iskolakezdes_20220811085351_0.jpg",
+                  "Month": "aug.",
+                  "Day2Digit": "11",
+                  "Lead": "3 hét múlva elstratol az új tanév. Sok apróságra kell odafigyelni",
+                  "Title": null,
+                  "CvuReferenceName": "stagingevents",
+                  "isNews": false,
+                  "isEvent": true
+              },
+              {
+                  "Cover": "https://4b28b118-cdn.agilitycms.cloud/Attachments/NewItems/iskolakezdes_20220811084804_0.jpg",
+                  "Month": "aug.",
+                  "Day2Digit": "11",
+                  "Lead": "3 hét múlva indul az új tanév. Nem árt már most felkészülni, milyen teendők lesznek.",
+                  "Title": "Indul az új tanév hamarosan. Már csak 3 hét maradt a vakációból",
+                  "CvuReferenceName": "stagingevents",
+                  "isNews": false,
+                  "isEvent": true
+              }
+          ],
+          "MoreThanLimit": false
+      },
+      {
+          "Title": "Megújulás",
+          "Items": [
+              {
+                  "Cover": "https://4b28b118-cdn.agilitycms.cloud/Attachments/NewItems/44_20220811090124_0.jpg",
+                  "Month": "aug.",
+                  "Day2Digit": "11",
+                  "Lead": "Lássuk megjelenik-e frontend ez a határidő publikálás után",
+                  "Title": "Ez egy teszt határidő aminek a célja a működés ellenőrzése",
+                  "CvuReferenceName": "stagingevents",
+                  "isNews": false,
+                  "isEvent": true
+              }
+          ],
+          "MoreThanLimit": false
+      },
+      {
+          "Title": "Konferencia",
+          "Items": [
+              {
+                  "Cover": "https://4b28b118-cdn.agilitycms.cloud/Attachments/NewItems/New-Project-2022-07-18T100745.652-scaled_20220811102721_0.jpg",
+                  "Month": "aug.",
+                  "Day2Digit": "11",
+                  "Lead": "Lead - teszt",
+                  "Title": "új sliders esemény - long title",
+                  "CvuReferenceName": "stagingevents",
+                  "isNews": false,
+                  "isEvent": true
+              }
+          ],
+          "MoreThanLimit": false
+      }
+  ],
+  "HasTopics": true,
+  "FooterBackgroundColor": "#1b213e",
+  "FooterTitle": "Footer Title",
+  "FooterIconsContent": "",
+  "FooterContent": "Footer",
+  "RecipientEmail": "ferencjozsef.bon@uni-corvinus.hu"
+}
