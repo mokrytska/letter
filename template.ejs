@@ -70,7 +70,7 @@
                   </div>
                {{/if}}
             {{/if}}
-            {{#if !MoreThanLimit}}
+            {{#unless MoreThanLimit}}
                 {{#if isNews }}
                     <div style="height: 110px;display: flex; margin-bottom: 15px;">
                         <div style="max-width: 170px; width:100%;">
@@ -110,7 +110,7 @@
                 </div>
 
                 {{/if}}
-              {{/if}}
+              {{/unless}}
             {{/each}}
         </div>
     </div>
