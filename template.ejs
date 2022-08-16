@@ -1,8 +1,8 @@
 <html>
 
 <body style="margin: 25px 30px 0px 30px;">
-    <div style="max-width:600px; width: 100%;padding: 25px 30px; display: flex; justify-content:space-between ;">
-        <div>
+    <div style="max-width:600px; width: 100%;padding: 25px 30px;">
+        <div style="display: inline-block; margin-right: 43px;">
             <div style="margin-bottom: 15px;">
                 <div style="color:#BF8F55; font-weight: 600; font-size: 40px;">Corvinus hírek</div>
                 <div style="color:#1B213E;  font-weight: 600; font-size: 20px;">munkatársainknak</div>
@@ -14,26 +14,32 @@
                 </button>
             </div>
         </div>
-        <div><img src="{{LogoSrc}}" alt="" style="width: 200px;"></div>
-    </header>
+        <div style="display: inline-block"><img src="{{LogoSrc}}" alt="" style="width: 150px;"></div>
+    </div>
     {{#if HasAllStaffContent}}
     <div style="background-color: #1B213E; max-width:600px; width: 100%;padding: 25px 30px;">
         <div style="margin-bottom: 25px; color:white;font-weight: 600; font-size: 35px;">Kiemelt hírek</div>
         {{#each AllStaffContent}}
-        <div style="display: flex; width: 100%; margin-bottom: 15px;">
-            <div style="max-width: 170px; width:100%; min-width: 170px; padding: 15px 0px 15px 15px; background: white;">
-                <img src="{{Cover}}" alt=""
-                    style="max-width: 170px; height: 95px; width:100%;">
-            </div>
-            <div style="padding: 15px; background-color: white;width: 100%;">
-                <div style="font-size: 15px; font-weight:600;color:#BF8F55; margin-bottom: 15px;">
-                    {{Title}}
+            <table style="margin-bottom: 15px; background: white; width: 100%; border-collapse: collapse;" cellspacing="0" border="0" >
+                <tr>
+                <td style="max-width: 170px; width:100%; min-width: 170px;background: white; display: inline-block">
+                <div style="padding: 15px 0px 15px 15px">
+                    <img src="{{Cover}}" alt=""
+                        style="max-width: 170px; height: 90px; width:100%;">
                 </div>
-                <div style="font-size: 14px; font-weight:500;color:#3D454C; word-break: break-all;">
-                    {{Lead}}
+                </td>
+                <td >
+                <div style="background-color: white; padding: 15px">
+                    <div style="font-size: 15px; font-weight:600;color:#BF8F55; margin-bottom: 15px;">
+                        {{Title}}
+                    </div>
+                    <div style="font-size: 14px; font-weight:500;color:#3D454C; word-break: break-all;">
+                        {{Lead}}
+                    </div>
                 </div>
-            </div>
-        </div>
+                </td>
+                </tr>
+            </table>
         {{/each}}
     </div>
     {{/if}}
@@ -51,64 +57,90 @@
             </div>
             {{/if}}
             {{#if isEvent}}
-            <div style="display: flex; font-size: 14px; font-weight:600;color:#1B213E; margin-bottom: 15px; background:#E5E5E5;">
-                <div
-                    style="border-right: #BF8F55 solid 2px; padding: 10px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                    <div style="font-weight:400">{{Month}}</div>
-                    <div style="color:#BF8F55; font-size: 18px;font-weight:400">{{Day2Digit}}</div>
-                </div>
-                <div style="padding: 10px;">
-                    <div style=" margin-bottom: 10px;">{{Title}}</div>
-                    <div style=" font-size: 14px; font-weight:500;">{{Lead}}</div>
-                </div>
-            </div>
+            <table style="margin-bottom: 15px; background: #E5E5E5; width: 100%; border-collapse: collapse;" cellspacing="0" border="0">
+
+            <tr style="color:#1B213E; margin-bottom: 15px; background:#E5E5E5;">
+               <td>
+                    <div style="border-right: #BF8F55 solid 2px; padding: 10px; text-align: center">
+                        <div style="font-weight:400">{{Month}}</div>
+                        <div style="color:#BF8F55; font-size: 18px;font-weight:400">{{Day2Digit}}</div>
+                    </div>
+                </td>
+                <td>
+                    <div style="padding: 10px;">
+                        <div style=" margin-bottom: 10px;">{{Title}}</div>
+                        <div style=" font-size: 14px; font-weight:500;">{{Lead}}</div>
+                    </div>
+                </td>
+            </tr>
+            </table>
             {{/if}}
             {{/if}}
-            {{#if !MoreThanLimit}}
+            {{#unless MoreThanLimit}}
             {{#if isNews }}
-            <div style="display: flex; margin-bottom: 15px; width: 100%;">
-                <div style="max-width: 170px; min-width: 170px; width:100%; background:#E5E5E5; padding: 15px 0px 15px 15px;">
-                    <img src="{{Cover}}" alt="" style="max-width: 170px; min-width: 170px; width:100%; height: 95px;">
-                </div>
-                <div style="padding: 15px 30px 10px 15px; background-color: #E5E5E5;width: 100%;">
-                    <div style="font-size: 15px; font-weight:600;color:#1B213E; margin-bottom: 15px;">
-                        {{Title}}
-                    </div>
-                    <div style="font-size: 14px; font-weight:500;color:#3D454C;">
-                        {{Lead}}
-                    </div>
-                </div>
-            </div>
+            <table style="margin-bottom: 15px; background: #E5E5E5; width: 100%; border-collapse: collapse;" cellspacing="0" border="0" >
+                <tr>
+                   <td style="max-width: 170px;  min-width: 170px;width:100%;background: #E5E5E5; display: inline-block">
+                        <div style="padding: 15px 0px 15px 15px;">
+                            <img src="{{Cover}}" alt="" style="max-width: 170px; width:100%; height: 90px;">
+                        </div>
+                    </td>  
+                    <td >
+                        <div style="background-color:  #E5E5E5; padding: 15px">                        
+                            <div style="font-size: 15px; font-weight:600;color:#1B213E; margin-bottom: 15px;">
+                                {{Title}}
+                            </div>
+                            <div style="font-size: 14px; font-weight:500;color:#3D454C;">
+                                {{Lead}}
+                            </div>
+                        </div>
+                    </td>
+                </tr>    
+            </table>        
             {{/if}}
             {{#if isEvent}}
-            <div style="display: flex; margin-bottom: 15px; width: 100%;">
-                <div style="max-width: 170px; min-width: 170px; width:100%;  background:#E5E5E5; padding: 15px 0px 15px 15px;">
-                    <img src="{{Cover}}" alt="" style="max-width: 170px; height: 95px; width:100%;">
-                </div>
-                <div style=" padding: 15px 30px 10px 15px; background-color: #E5E5E5; width: 100%;">
+             <table style="margin-bottom: 15px; background: #E5E5E5; width: 100%; border-collapse: collapse;" cellspacing="0" border="0" >
+              <tr>
+               <td style="max-width: 170px; width:100%; min-width: 170px;background: #E5E5E5; display: inline-block">
+                 <div style="padding: 15px 0px 15px 15px">
+                    <img src="{{Cover}}" alt="" style="max-width: 170px; height: 90px; width:100%;">
+                 </div>
+               </td>
+                <td >
+                    <div style="background-color:#E5E5E5; padding: 15px">                
                     <div
-                        style="display: flex; font-size: 14px; font-weight:600;color:#1B213E; margin-bottom: 15px; border-bottom: #BF8F55 solid 2px; padding-bottom: 5px;">
+                        style="font-size: 14px; font-weight:600;color:#1B213E; margin-bottom: 15px; border-bottom: #BF8F55 solid 2px; padding-bottom: 5px;">
+                       <table>
+                        <tr>
+                        <td>
                         <div
-                            style="border-right: #BF8F55 solid 2px; padding-right: 5px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                            style="border-right: #BF8F55 solid 2px; padding-right: 5px; text-align: center; height: 100%">
                             <div>{{Month}}</div>
                             <div style="color:#BF8F55;">{{Day2Digit}}</div>
                         </div>
+                        </td>
+                        <td>
                         <div style="padding-left: 5px;">
                             {{Title}}
                         </div>
+                        </td>
+                        </tr>
+                        </table>
                     </div>
                     <div style="font-size: 14px; font-weight:500;color:#3D454C;">
                         {{Lead}}
                     </div>
-                </div>
-            </div>
+                  </div>
+                 </td>
+                </tr>
+            </table>
             {{/if}}
-            {{/if}}
+            {{/unless}}
             {{/each}}
         </div>
     </div>
     {{/each}}
-    <footer style=" max-width:600px; width: 100%;background-color:{{FooterBackgroundColor}}; padding: 25px 30px 30px">
+    <div style=" max-width:600px; width: 100%;background: #1b213e; padding: 25px 30px 30px">
         <div style="margin-bottom: 25px; color:#BF8F55;font-weight: 600; font-size: 35px;">Kövessen minket!</div>
         <div style="margin-bottom: 25px; display: flex;">
             <img style="width:50px;height:50px" src="./images/facebook_480x480.png" alt="">
@@ -127,7 +159,7 @@
             Várjuk a honlapon és az Intraneten megjelentetni kívánt híreket, közleményeket, eseményeket!
         </div>
         <div style="color:#BF8F55">Tartalomigénylés leadása »</div>
-    </footer>
+    </div>
 </body>
 
 </html>
