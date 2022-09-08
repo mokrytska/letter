@@ -1,92 +1,102 @@
 <html>
 
-<body style="margin: 25px 30px 0px 30px;">
-    <div style="max-width:600px; width: 100%;padding: 25px 30px;">
-        <div style="display: inline-block; margin-right: 43px;">
+<body>
+<table style="margin: 25px 30px 0px 30px;">
+ <table style="width:600px; padding: 25px 30px">
+    <tr>
+        <td>         
             <div style="margin-bottom: 15px;">
                 <div style="color:#BF8F55; font-weight: 600; font-size: 40px;">Corvinus hírek</div>
                 <div style="color:#1B213E;  font-weight: 600; font-size: 20px;">munkatársainknak</div>
             </div>
-            <div>
-                <button style="background-color:#BF8F55; color:white;padding: 10px 15px; border: none;">
-                    Tartalomigények
-                    beküldése
-                </button>
-            </div>
-        </div>
-        <div style="display: inline-block"><img src="{{LogoSrc}}" alt="" style="width: 150px;"></div>
-    </div>
-    {{#if HasAllStaffContent}}
-    <div style="background-color: #1B213E; max-width:600px; width: 100%;padding: 25px 30px;">
-        <div style="margin-bottom: 25px; color:white;font-weight: 600; font-size: 35px;">Kiemelt hírek</div>
-        {{#each AllStaffContent}}
-            <table style="margin-bottom: 15px; background: white; width: 100%; border-collapse: collapse;" cellspacing="0" border="0" >
+            <table border="0" cellspacing="0" cellpadding="0">
                 <tr>
-                <td style="max-width: 170px; width:100%; min-width: 170px;background: white; display: inline-block">
-                <div style="padding: 15px 0px 15px 15px">
-                    <img src="{{Cover}}" alt=""
-                        style="max-width: 170px; height: 90px; width:100%;">
-                </div>
-                </td>
-                <td style="width: 100%" >
-                <div style="background-color: white; padding: 15px">
-                    <div style="font-size: 15px; font-weight:600;color:#BF8F55; margin-bottom: 15px;">
-                        {{Title}}
+                    <td style="padding: 10px 15px 10px 15px; background-color:#BF8F55;" align="center">
+                        <span style="font-size: 18px; font-family: Helvetica, Arial, sans-serif; font-weight: bold; color: #ffffff;">Tartalomigények
+                    beküldése</span>
+                    </td>
+                </tr>
+            </table>     
+        </td>
+        <td align="right" valign="top">  
+            <img src="cid:corvinuslogo.png" alt="" style="width: 150px;"width="150" height="100">
+        </td>
+    </tr>
+  </table>
+    {{#if HasAllStaffContent}}
+    <table style="background-color: #1B213E; width:540px; padding: 25px 30px;">
+      <tr style="">
+        <td style="margin-bottom: 25px; color:white;font-weight: 600; font-size: 35px;">Kiemelt hírek</td>
+        {{#each AllStaffContent}}
+            <table style="background: #1B213E; padding: 10px 15px;" cellspacing="0" border="0"  width="540">
+                <tr style="border-bottom: solid 15px #1B213E; background: white;">
+                    <td style="border-bottom: solid 15px #1B213E;  padding:10px; width: 170px">
+                    
+                        <img src="{{Cover}}" alt=""
+                            style="max-width: 170px; height: 90px; width:170px;" width="170" height="90">
+                    
+                    </td>
+                    
+                    <td style="border-bottom: solid 15px #1B213E; padding: 10px 10px 10px 0px">
+                    <div style="background-color: white;">
+                        <div style="font-size: 15px; font-weight:600;color:#BF8F55; text-decoration:none; margin-bottom: 15px;">
+                            <a style="text-decoration:none; color: #BF8F55" href="{{Url}}" ><strong style="text-decoration:none; color:#BF8F55 ">{{Title}}</strong></a>
+                        </div>
+                        <div style="font-size: 14px; font-weight:500;color:#3D454C; word-break: break-all;">
+                            {{Lead}}
+                        </div>
                     </div>
-                    <div style="font-size: 14px; font-weight:500;color:#3D454C; word-break: break-all;">
-                        {{Lead}}
-                    </div>
-                </div>
-                </td>
+                    </td>
                 </tr>
             </table>
         {{/each}}
-    </div>
+      </tr>
+    </table>
     {{/if}}
     {{#each Topics}}
-    <div style=" max-width:600px; width: 100%;padding: 25px 30px 0px;">
-        <div style=" border-bottom: #BF8F55 solid 2px; padding-bottom: 25px;">
-            <div style="margin-bottom: 25px; color:#BF8F55;font-weight: 600; font-size: 35px;">{{Title}}</div>
-            {{#each Items}}
-            
+    <table style="width:600px; padding: 25px 30px 0px 30px">
+       <tr>
+        <div style="margin-bottom: 25px; color:#BF8F55;font-weight: 600; font-size: 35px;">{{Title}}</div>
+        {{#each Items}}
+        {{#if MoreThanLimit}}
             {{#if isNews }}
-            <div style="margin-bottom: 15px;">
-                <div style="margin-bottom: 10px; font-size: 18px; font-weight:bold;color:#1B213E;">{{Title}}
+                <div style="margin-bottom: 15px; text-decoration:none; color: #1B213E">
+                    <div style="margin-bottom: 10px; font-size: 18px; font-weight:bold;color:#1B213E;"><a style="text-decoration:none; color: #1B213E" href="{{Url}}"><strong style="text-decoration:none; color: #1B213E" ">{{Title}}</strong></a>
                 </div>
-                <div style=" font-size: 14px; font-weight:500;color:#1B213E;">{{Lead}}</div>
-            </div>
-           
-            {{#if isEvent}}
-            <table style="margin-bottom: 15px; background: #E5E5E5; width: 100%; border-collapse: collapse;" cellspacing="0" border="0">
-
-            <tr style="color:#1B213E; margin-bottom: 15px; background:#E5E5E5;">
-               <td style="border-right: #BF8F55 solid 2px; padding: 10px; text-align: center">
-                    <div style="font-weight:bold">{{Month}}</div>
-                    <div style="color:#BF8F55; font-size: 18px;font-weight:bold">{{Day2Digit}}</div>                    
-                </td>
-                <td>
-                    <div style="padding: 10px;">
-                        <div style=" margin-bottom: 10px; font-weight:bold">{{Title}}</div>
-                        <div style=" font-size: 14px; font-weight:500;">{{Lead}}</div>
-                    </div>
-                </td>
-            </tr>
-            </table>
+                    <div style=" font-size: 14px; font-weight:500;color:#1B213E;">{{Lead}}</div>
+                </div>
             {{/if}}
+            {{#if isEvent}}
+                <table style="margin-bottom: 15px; background: #E5E5E5; width: 540px; border-collapse: collapse;"  cellspacing="0" border="0">
+                    <tr style="color:#1B213E; margin-bottom: 15px; background:#E5E5E5; ">
+                        <td style="border-right: #BF8F55 solid 2px; padding: 10px; text-align: center">
+                            <div style="font-weight:bold">{{Month}}</div>
+                            <div style="font-size: 18px;font-weight:bold">{{Day2Digit}}</div>                    
+                        </td>
+                        <td>
+                            <div style="padding: 10px; text-decoration:none; color: #1B213E"">
+                                <div style=" margin-bottom: 10px; font-weight:bold"><a style="text-decoration:none; color: #1B213E" href="{{Url}}"><strong style="text-decoration:none; color: #1B213E" ">{{Title}}</strong></a></div>
+                                <div style=" font-size: 14px; font-weight:500;">{{Lead}}</div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            
+                {{/if}}
             {{/if}}
             {{#unless MoreThanLimit}}
             {{#if isNews }}
-            <table style="margin-bottom: 15px; background: #E5E5E5; width: 100%; border-collapse: collapse;" cellspacing="0" border="0" >
-                <tr>
-                   <td style="max-width: 170px;  min-width: 170px;width:100%;background: #E5E5E5; display: inline-block">
+            <table style="margin-bottom: 15px; background: #E5E5E5; width: 540px; border-collapse: collapse;" cellspacing="0" border="0" >
+                <tr style="padding: 10px; background: #E5E5E5;">
+                   <td style="background: #E5E5E5; display: inline-block; width:170px">
                         <div style="padding: 15px 0px 15px 15px;">
-                            <img src="{{Cover}}" alt="" style="max-width: 170px; width:100%; height: 90px;">
+                            <img src="{{Cover}}" alt="" style="max-width: 170px; width:170px; height: 90px;" width="170" height="90">
                         </div>
                     </td>  
                     <td style="width: 100%">
                         <div style="background-color:  #E5E5E5; padding: 15px">                        
                             <div style="font-size: 15px; font-weight:600;color:#1B213E; margin-bottom: 15px;">
-                                {{Title}}
+                               <a style="text-decoration:none; color: #1B213E" href="{{Url}}"><strong style="text-decoration:none; color: #1B213E" ">{{Title}}</strong></a>
                             </div>
                             <div style="font-size: 14px; font-weight:500;color:#3D454C;">
                                 {{Lead}}
@@ -97,14 +107,15 @@
             </table>        
             {{/if}}
             {{#if isEvent}}
-             <table style="margin-bottom: 15px; background: #E5E5E5; width: 100%; border-collapse: collapse;" cellspacing="0" border="0" >
-              <tr>
-               <td style="max-width: 170px; width:100%; min-width: 170px;background: #E5E5E5; display: inline-block">
+             <table style="margin-bottom: 15px; background: #E5E5E5; width: 540px; border-collapse: collapse;" cellspacing="0" border="0" >
+              <tr style="padding: 10px; background: #E5E5E5;">
+               <td style="background: #E5E5E5; display: inline-block; width: 170px">
                  <div style="padding: 15px 0px 15px 15px">
-                    <img src="{{Cover}}" alt="" style="max-width: 170px; height: 90px; width:100%;">
+                    <img src="{{Cover}}" alt="" width="170" height="90">
                  </div>
                </td>
-                <td >
+               
+                <td style="width: 100%" >
                     <div style="background-color:#E5E5E5; padding: 15px">                
                     <div
                         style="font-size: 14px; font-weight:600;color:#1B213E; margin-bottom: 15px; border-bottom: #BF8F55 solid 2px; padding-bottom: 5px;">
@@ -112,11 +123,11 @@
                         <tr>
                         <td style="border-right: #BF8F55 solid 2px; padding-right: 5px; text-align: center;">                    
                             <div style="font-weight:bold">{{Month}}</div>
-                            <div style="color:#BF8F55; font-weight:bold">{{Day2Digit}}</div>                        
+                            <div style="font-weight:bold">{{Day2Digit}}</div>                        
                         </td>
                         <td>
                         <div style="padding-left: 5px; font-weight:bold">
-                            {{Title}}
+                            <a style="text-decoration:none; color: #1B213E" href="{{Url}}"><strong style="text-decoration:none; color: #1B213E"> {{Title}}</strong></a>
                         </div>
                         </td>
                         </tr>
@@ -132,29 +143,50 @@
             {{/if}}
             {{/unless}}
             {{/each}}
-        </div>
-    </div>
+            <table style="width:540px">
+                <tr style="width:540px">
+                    <td style="background:none;  height:15px; width:100%; "></td>
+                </tr>
+            </table>
+            <table style="width:540px">
+                <tr style="width:540px">
+                    <td style="background:#BF8F55;  height:1px; width:100%;"></td>
+                </tr>
+            </table>
+       </tr> 
+    </table>
     {{/each}}
-    <div style=" max-width:600px; width: 100%;background: #1b213e; padding: 25px 30px 30px">
-        <div style="margin-bottom: 25px; color:#BF8F55;font-weight: 600; font-size: 35px;">Kövessen minket!</div>
-        <div style="margin-bottom: 25px; display: flex;">
-            <img style="width:50px;height:50px" src="./images/facebook_480x480.png" alt="">
-            <img style="width:50px;height:50px" src="./images/linkedin_480x480.png" alt="">
-            <img style="width:50px;height:50px" src="./images/twitter_480x480.png" alt="">
-            <img style="width:50px;height:50px" src="./images/instagram_480x480.png" alt="">
-            <img style="width:50px;height:50px" src="./images/youtube_480x480.png" alt="">
-            <img style="width:50px;height:50px" src="./images/tiktok_480x480.png" alt="">
-        </div>
-        <div style="margin-bottom: 20px;color: white; ">
-            Ezt a levelet a Budapesti Corvinus Egyetem Intranet felületén keresztül a {{RecipientEmail}} címre küldtük.
-        </div>
-        <div style="margin-bottom: 20px;color: white; ">
-            A hírlevél gyakoriságát és a kiválasztott témákat a saját <a style="color: #BF8F55">Profil beálítások</a>
-            alatt módosíthatja.
-            Várjuk a honlapon és az Intraneten megjelentetni kívánt híreket, közleményeket, eseményeket!
-        </div>
-        <div style="color:#BF8F55">Tartalomigénylés leadása »</div>
-    </div>
+     <table style="width:540px">
+                <tr style="width:540px">
+                    <td style="background:none;  height:15px; width:100%; "></td>
+                </tr>
+            </table>
+    <table style="width:600px; background: #1b213e; padding: 25px 30px 30px;">
+
+        <tr style="width:600px; background: #1b213e; padding: 25px 30px 30px">
+          <td>
+            <div style="margin-bottom: 25px; color:#BF8F55;font-weight: 600; font-size: 35px;">Kövessen minket!</div>
+            <div style="margin-bottom: 25px; display: flex;">
+                <img style="width:50px;height:50px" src="cid:facebook.png" alt="">
+                <img style="width:50px;height:50px" src="cid:linkedin.png" alt="">
+                <img style="width:50px;height:50px" src="cid:twitter.png" alt="">
+                <img style="width:50px;height:50px" src="cid:instagram.png" alt="">
+                <img style="width:50px;height:50px" src="cid:youtube.png" alt="">
+                <img style="width:50px;height:50px" src="cid:tiktok.png" alt="">
+            </div>
+            <div style="margin-bottom: 20px;color: white; ">
+                Ezt a levelet a Budapesti Corvinus Egyetem Intranet felületén keresztül a {{RecipientEmail}} címre küldtük.
+            </div>
+            <div style="margin-bottom: 20px;color: white; ">
+                A hírlevél gyakoriságát és a kiválasztott témákat a saját <a style="color: #BF8F55"> <strong style="color: #BF8F55">Profil beálítások<strong> </a>
+                <span style="color: white; ">alatt módosíthatja.
+                Várjuk a honlapon és az Intraneten megjelentetni kívánt híreket, közleményeket, eseményeket!</span>
+            </div>
+            <div style="color:#BF8F55">Tartalomigénylés leadása »</div>
+            </td>
+        </tr> 
+    </table>
+ </table>   
 </body>
 
 </html>
